@@ -33,6 +33,8 @@ Token Parser::expect(TokenType expected_type)
     return t;
 }
 
+
+
 // Parsing
 
 // This function is simply to illustrate the GetToken() function
@@ -61,6 +63,327 @@ void Parser::ConsumeAllInput()
     }
 
 }
+
+
+void Parser::parse_input()
+{
+	parse_program();
+	parse_inputs();
+}
+
+void Parser::parse_program()
+{
+	parse_poly_decl_section();
+	parse_start();
+}
+
+void Parser::parse_poly_decl_section()
+{
+	parse_poly_decl();
+	Token t = lexer.peek(1);
+	if(t.token_type == POLY)
+	{
+		parse_poly_decl();
+	}
+	else if(t.token_type != START)
+	{
+		syntax_error();
+	}
+	else
+	{
+		//do nothing
+	}
+}
+
+void Parser::parse_poly_decl()
+{
+	expect(POLY);
+	parse_polynomial_header();
+	expect(EQUAL);
+	parse_polynomial_body();
+	expect(SEMICOLON);
+}
+
+void parse_polynomial_header()
+{
+	parse_polynomial_name();
+	Token t = lexer.peek(1);
+	if (t.token_type == LPAREN)
+	{
+		expect(LPAREN);
+		parse_id_list();
+		expect(RPAREN);
+	}
+	else if(t.token_type != EQUAL)
+	{
+		syntax_error();
+	}
+	else
+	{
+		//do nothing
+	}
+}
+
+void Parser::id_list()
+{
+	expect(ID);
+	Token t = lexer.peek(1);
+	if(t.token_type == COMMA)
+	{
+		expect(COMMA);
+		parse_id_list();
+	}
+	else if(t.token_type != RPAREN)
+	{
+		syntax_error();
+	}
+	else 
+	{
+		//do nothing
+	}
+}
+
+void Parser::parse_polynomial_name()
+{
+	expect(ID);
+}
+
+void Parser::parse_polynomial_body()
+{
+	parse_term_list();
+}
+
+void Parser::parse_term_list()
+{
+	parse_term();
+	Token t == lexer.peek(1);
+	if(t.token_type == MINUS || t.token_type == PLUS)
+	{
+		parse_add_operator();
+		parse_term_list();
+	}
+	else if (t.token_type != NUM || t.token_type != ID)
+	{
+		syntax_error();
+	}
+	else
+	{
+		//do nothing
+	}
+}
+
+void Parser::parse_monomial_list()
+{
+	expect(ID);
+	Token t = lexer.peek(1);
+	if(t.token_type == POWER)
+	{
+		t = lexer.peek(2);
+		if(t.token_type = ID)
+		{
+			parse_monomial_list();
+		}
+		else if (t.token_type == ID)
+		{
+			parse_monomial_list();
+		}
+		else if(t.token_type != SEMICOLON)
+		{
+			syntax_error();
+		}
+		else
+		{
+			//All is good in the hood
+		}
+	}	
+}
+
+void Parser::parse_monomial()
+{
+	expect(ID);
+	Token t = lexer.peek(1);
+	if(t.token_type == POWER)
+	{
+		parse_exponent();
+	}
+	else if(t.token_type != SEMICOLON || t.token_type != ID)
+	{
+		syntax_error();
+	}
+	else
+	{
+		//All is good in the hood
+	}
+}
+
+void Parser::parse_exponent()
+{
+	expect(POWER);
+	expect(NUM);
+}
+
+void Parser::parse_add_operator()
+{
+	Token t = lexer.peek(1);
+	if(t.token_type == MINUS)
+	{
+		expect(MINUS);
+	}
+	else if(t.token_type == PLUS)
+	{
+		expect(PLUS);
+	}
+	else 
+	{
+		//All is good in the hood
+	}
+}
+
+void Parser::parse_coeficient()
+{
+	expect(NUM);
+}
+
+void Parser::parse_start()
+{
+	exepct(START);
+	parse_statement_list();
+}
+
+void Parser::parse_inputs()
+{
+	expect(NUM);
+	Token t = lexer.peek(1);
+	if(t.token_type == NUM)
+	{
+		parse_inputs();
+	}
+	else if(t.token_type != EOF)
+	{
+		syntax_error();
+	}
+	else 
+	{
+		//All is good in the hood
+	}
+}
+
+void Parser::parse_statement_list()
+{
+	parse_statement();
+	Token t = lexer.peek(1);
+	
+	if(t.token_type == INPUT || t.token_type == ID)
+	{
+		parse_statement_list();
+	}
+	else if(t.token_type != NUM)						//after start is inputs
+	{
+		syntax_error();
+	}
+	else 
+	{
+		//All is good in the hood
+	}
+
+}
+
+void Parser::parse_statement()
+{
+	Token t = lexer.peek(1);
+	if(t.token_type == INPUT)
+	{
+		parse_input_statement();
+	}
+	else if(t.token_type == ID)
+	{
+		parse_poly_evaluation_statement();
+	}
+	else
+	{
+		syntax_error();
+	}
+}
+
+
+void Parser::parse_poly_evaluation_statement()
+{
+	parse_polynomial_evaluation();
+	expect(SEMICOLON);
+}
+
+void Parser::parse_input_statement()
+{
+	expect(INPUT);
+	expect(ID);
+	expect(SEMICOLON);
+}
+
+void Parser::parse_polynomial_evaluation()
+{
+	parse_polynomial_name();
+	expect(LPAREN);
+	parse_argument_list();
+	expect(RPAREN);
+}
+
+void Parser::parser_argument_list()
+{
+	parse_argument();
+	Token t = lexer.peek(1);
+	if (t.token_type == COMMA)
+	{
+		expect(COMMA);
+		parse_argument_list();
+	}
+	else if(t.token_type != RPAREN)
+	{
+		syntax_error();
+	}
+	else
+	{
+		//good in the hood
+	}
+}
+
+void Parser::parse_argument()
+{
+	Token t = lexer.peek(1);
+	if(t.token_type == ID)
+	{
+		t = lexer.peek(2)
+		if(t.token_type == LPAREN)
+		{
+			parse_polynomial_evaluation();
+		}
+		else if(t.token_type == LPAREN || t.token_type == COMMA)
+		{
+			expect(ID);
+		}
+		else
+		{
+			syntax_error();
+		}
+	}
+	else if(t.token_type == NUM)
+	{
+		expect(NUM);
+	}
+	else
+	{
+		syntax_error();
+	}
+}
+
+
+
+
+
+
+
+
+
+
 
 int main()
 {
