@@ -1,0 +1,11 @@
+POLY A(X, Y, Z) = X + Y + Z;
+
+START
+
+INPUT X;
+INPUT Y;
+INPUT Z;
+
+A(X, Y, Z);
+
+1 2 3 4 5 6

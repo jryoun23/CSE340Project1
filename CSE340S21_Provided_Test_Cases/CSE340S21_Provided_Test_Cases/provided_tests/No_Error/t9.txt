@@ -1,0 +1,12 @@
+POLY A(M, N, O) = M^7 - 6 N M O^4 + 9 M^8 N^3 O^2 - 5 N M^5 O + 23 M^2 N O;
+POLY B = x^4 + x^3 + x^2 + x^1 + x^0;
+POLY C(P, Q) = P - P + Q - Q;
+START
+INPUT X;
+INPUT Y;
+A(X, Y, X);
+B(B(B(X)));
+INPUT X;
+INPUT Y;
+C(X, Y);
+0 2 1 3 5 9

@@ -1,0 +1,24 @@
+POLY T(X, Y) = X + Y;
+POLY S(R, Y, U) = R^2 + Y^2 + U;
+POLY F = x + 5555;
+START
+INPUT A;
+INPUT B;
+INPUT C;
+
+S(A, 
+B);
+
+INPUT A;
+INPUT C;
+
+T(T(
+T(S(A))
+));
+
+INPUT B;
+INPUT C;
+
+S(T(1), F(A, 1));
+
+28 199 29 10 2 8 1 82 82 30

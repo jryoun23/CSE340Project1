@@ -1,0 +1,60 @@
+POLY D(x, y, z) = x + 2 x + 9 x + 5 x^2 + 10;
+POLY B(a, b, c, d) = a^0 + b^1 + c^2 + d^3;
+POLY C(e, f, g) = e^4 + 5 + f^6 + 7 + g^8 + 9;
+POLY A = x + 2 x + 9 x + 5 x^2 + 10;
+START
+INPUT X;
+INPUT Q;
+INPUT Z;
+
+B(P, Q, Q, R);
+
+B(1, P, Q, R);
+C(10, P, Q);
+
+A(A(
+A(A(
+A(A(
+A(A(A(A(A(A(
+A(A(
+
+
+
+
+
+A(A(
+
+
+A(A(
+
+A(D(P, Q, R))))))))))
+))))))))));
+
+INPUT P;
+INPUT Q;
+INPUT R;
+
+A(A(
+A(A(
+A(A(
+A(A(A(A(A(A(
+A(A(
+
+
+
+
+
+A(A(
+
+
+A(A(
+
+A(D(P, Q, R))))))))))
+))))))))));
+
+
+
+
+
+
+19 266 1 2 0 1

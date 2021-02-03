@@ -1,0 +1,11 @@
+POLY A = x + 1;
+POLY B = x^2 + x + 4;
+POLY C(X) = X - 1;
+START
+INPUT X;
+D(X);
+G2(0);
+F(1, G2(0));
+D(E(A(F(B(F(F(F3(F4(F3(F4(F3(F4(F3
+(F4(F3(F4(S(F(F3(X))))))))))))))))))));
+363 2 2 1 0

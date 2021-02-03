@@ -1,0 +1,19 @@
+POLY A(M, N, O) = M^7 - 6 N M O^4 + 9 M^8 N^3 O^2 - 5 N M^5 O + 23 M^2 N O;
+POLY 
+B = 
+y^4 
++ x^3 + y^2 +
+ x^1 + x^0;
+POLY C(P, Q) = P - P + 2 Q - Q + R^473;
+POLY E = X + x^2;
+POLY F(a, b, s, c, e, r, y) = a - b + c - d + e - f;
+POLY U(X, Y, x) = x + X + Y;
+START
+INPUT X;
+INPUT Y;
+A(X, Y, X);
+B(B(B(X)));
+INPUT X;
+INPUT Y;
+C(X, Y);
+98 34 92 12 3 4

@@ -1,0 +1,93 @@
+POLY A(M, N, O) = M - 6 N M + 9 M N O - 5 N M O + 23 M N O;
+POLY B = x^4;
+POLY C(P, Q) = P - P + Q - Q;
+POLY D = x + 1;
+POLY E(X) = X + X + 3 X;
+POLY F(Q, W, E, R, T, Y, U, I, O) = I - 18172;
+POLY G = x^2972 + 1;
+POLY H(X) = X;
+START
+INPUT X;
+INPUT Y;
+A(X, Y, X);
+B(B(B(X)));
+
+INPUT X;
+INPUT Y;
+
+INPUT X;
+INPUT Y;
+C(X, Y);
+
+INPUT X;
+INPUT Y;
+D(B(B(B(B(B(B(B(B(B(Y))))))))));
+E(E(E(X)));
+
+INPUT X;
+INPUT Y;
+F(B(Y), E(E(E(X))), E(E(E(X))), B(Y), 1, 2, 3, 7, 4);
+G(B(B(X)));
+
+
+
+
+INPUT X;
+INPUT Y;
+A(X, Y, Y);
+B(B(B(X)));
+
+INPUT X;
+INPUT Y;
+A(X, Y, X);
+H(H(H(X)));
+
+
+INPUT X;
+INPUT Y;
+A(X, Y, X);
+B(B(B(X)));
+
+INPUT X;
+INPUT Y;
+
+
+
+
+INPUT X;
+INPUT Y;
+C(X, Y);
+B(B(B(B(B(B(B(B(B(Y)))))))));
+
+INPUT X;
+INPUT Y;
+D(B(B(B(B(B(B(B(B(B(Y))))))))));
+E(E(E(X)));
+
+INPUT X;
+INPUT Y;
+F(B(B(B(B(B(B(B(B(B(Y))))))))), E(E(E(X))), E(E(E(X))), B(B(B(B(B(B(B(B(B(Y))))))))), 1, 2, 3, 7, 4);
+G(B(B(X)));
+
+INPUT X;
+INPUT Y;
+A(X, Y, Y);
+B(B(B(X)));
+
+INPUT X;
+INPUT Y;
+A(X, Y, X);
+H(H(H(X)));
+
+0 0 
+1 0 
+0 0 
+0 1 
+0 0 
+0 0 
+0 0 
+1 0 
+0 0 
+0 0 
+1 0 
+0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0	

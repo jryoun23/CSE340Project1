@@ -1,0 +1,11 @@
+POLY F1 = x + 1;
+POLY F4 = x^2 + x + 4;
+POLY F3(X) = X - 1;
+START
+INPUT X;
+F4(Y);
+F1(Z);
+F3(F1(0));
+F4(F3(F4(F3(F4(F3(F4(F3(F4(F3(F4(F3(F4(F3
+(F4(F3(F4(F3(F4(F3(P))))))))))))))))))));
+363 2 2 1 0

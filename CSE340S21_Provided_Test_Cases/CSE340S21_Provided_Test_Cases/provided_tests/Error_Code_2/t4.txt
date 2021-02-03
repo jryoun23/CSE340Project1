@@ -1,0 +1,9 @@
+POLY ABCD(E, F) = E + 9 + F^0 
+- G^3;
+POLY XYZ(M) = M^9 + 1 - N
+	+ N^532 + 2 N;
+START
+INPUT X;
+INPUT Y;
+XYZ(X);
+10 200 2740 1 3

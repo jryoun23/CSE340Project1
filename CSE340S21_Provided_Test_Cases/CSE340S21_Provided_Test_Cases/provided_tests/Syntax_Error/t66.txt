@@ -1,0 +1,6 @@
+POLY F(X) = X^2 + X + 3;
+START
+INPUT A;
+INPUT B;
+F(A);
+11 233 134

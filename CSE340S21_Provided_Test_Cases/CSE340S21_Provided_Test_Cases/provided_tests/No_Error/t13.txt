@@ -1,0 +1,23 @@
+POLY F1(X) = X^0 + X^1 + X^2 + X^3 + 1;
+POLY F2 = x^2 + x + 1;
+POLY F3 = x;
+POLY F4 = x + 1;
+POLY G1(P, Q, R, S, T) = P Q R S T;
+POLY G2 = x + 2 x + 3 x;
+START
+INPUT X;
+INPUT Y;
+F4(X);
+F1(Y);
+
+INPUT X;
+INPUT XYZ;
+F3(XYZ);
+F4(X);
+
+INPUT Z;
+INPUT XZ;
+G1(Z, XZ, X, XYZ, Y);
+G2(XZ);
+
+34 21 4 34 21 4 34 21 4 34 21 4 34 21 4

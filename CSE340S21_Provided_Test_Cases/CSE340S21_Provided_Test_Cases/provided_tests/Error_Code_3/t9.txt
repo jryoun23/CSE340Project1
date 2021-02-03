@@ -1,0 +1,29 @@
+POLY A(M) = 1 + 8 M^0 + 4 M^3;
+POLY B = 9;
+POLY C(N) = 2 N - 4 N N + 9 N N N;
+START
+INPUT H;
+INPUT I;
+INPUT J;
+
+C(H);
+B(J);
+A(5);
+
+D(H);
+E(J);
+F(5);
+
+G(H);
+K(J);
+L(5);
+
+M(H);
+N(J);
+O(5);
+
+C(H);
+B(J);
+A(5);
+
+1 2 3 4 5 6

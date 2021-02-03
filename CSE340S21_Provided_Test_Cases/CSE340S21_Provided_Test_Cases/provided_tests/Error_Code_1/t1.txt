@@ -1,0 +1,14 @@
+POLY A(M, N) = M^6 + 3 N - N^2 + 71;
+POLY B(O, P, Q) = 1 O + 2 P + 3 Q - 4;
+POLY C(R, S, T) = S + 100;
+POLY D(a, g) = a g;
+POLY A = x - 1001;
+POLY A(U, V, W) = U^2 + 4 V^2 W^3 - 6 U^1 V^4;
+POLY E(a) = a a a a a a a;
+POLY B = x^5 - x^4 + 2;
+POLY F(M, N) = M^2 + N^2;
+START
+INPUT X;
+INPUT Y;
+1 2 3 4 5 6
+

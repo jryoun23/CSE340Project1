@@ -1,0 +1,97 @@
+POLY F1(X) = X + 1;
+POLY F2 = x^2 + x + 1;
+POLY F1(A, B) = A - A + B;
+
+POLY G = x^2 + x;
+
+POLY F3 = x;
+POLY F4 = x + 1;
+POLY F2(X) = X^5050 - 38792647;
+POLY F1(X) = X + 1;
+POLY F2 = x^2 + x + 1;
+POLY F1(A, B) = A - A + B;
+POLY F3 = x;
+POLY F4 = x + 1;
+POLY F2(X) = X^5050 - 38792647;
+POLY F1(X) = X + 1;
+POLY F2 = x^2 + x + 1;
+
+POLY G1(T) = T + 2 T + 5 T^3;
+
+POLY F1(A, B) = A - A + B;
+POLY F3 = x;
+POLY F4 = x + 1;
+POLY F2(X) = X^5050 - 38792647;
+POLY F1(X) = X + 1;
+POLY F2 = x^2 + x + 1;
+POLY F1(A, B) = A - A + B;
+POLY F3 = x;
+POLY F4 = x + 1;
+POLY F2(X) = X^5050 - 38792647;
+
+POLY G2(A, S, D, F, G, H, J, K, L) = 9;
+
+
+POLY F1(X) = X + 1;
+POLY F2 = x^2 + x + 1;
+POLY F1
+	(A, B) = A - A + B;
+POLY F3 = x;
+POLY F4 = x + 1;
+POLY F2
+ 	(X) = X^5050 - 38792647;
+
+
+POLY F1(X) = X + 1;
+POLY F2 = x^2 + x + 1;
+POLY F1
+
+	(A, B) = A - A + B;
+POLY F3 = x;
+POLY F4 = x + 1;
+POLY F2(X) = X^5050 - 38792647;
+POLY 
+
+	F1(X) 
+		= X + 1;
+POLY F2 = x^2 + x + 1;
+POLY F1(A, B) = A - A + B;
+POLY F3
+	 = x;
+POLY F4 = x + 1;
+POLY F2
+		(X) = X^5050 - 38792647;
+
+
+
+
+
+
+
+
+POLY F1(X) = X + 1;
+POLY F2 = x^2 + x + 1;
+POLY F1(A, B) = A - A + B;
+POLY F3 = x;
+POLY F4 = x + 1;
+POLY F2(X) = X^5050 - 38792647;
+START
+INPUT X;
+INPUT Y;
+
+G1(Y);
+G(X);
+
+INPUT X;
+INPUT Y;
+
+G1(Y);
+G(X);
+
+INPUT X;
+INPUT Y;
+
+G1(Y);
+G(X);
+
+34 21 4 8 72 1 2778 343 1386

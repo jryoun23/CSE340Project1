@@ -1,0 +1,9 @@
+POLY F1(X) = X + 1;
+POLY F2 = x^2 + x + 1;
+POLY F3(R, T) = R - T;
+START
+INPUT X;
+F3(1, X);
+F1(X);
+F2(5);
+34 21 4

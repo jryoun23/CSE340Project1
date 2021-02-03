@@ -1,0 +1,95 @@
+POLY D = x + 2 x + 9 x + 5 x^2 + 10;
+POLY B(a, b, c, d) = a^0 + b^1 + c^2 + d^3;
+POLY A(e) = e + 5;
+START
+INPUT P;
+INPUT Q;
+INPUT R;
+
+B(P, Q, Q, R);
+
+D(1);
+A(Q);
+
+D(R);
+
+A(A(
+A(A(
+A(A(
+A(A(A(A(A(A(
+A(A(
+
+
+
+
+
+A(A(
+
+
+A(A(
+
+A(A(P))))))))))
+))))))))));
+
+
+INPUT P;
+INPUT Q;
+INPUT R;
+
+B(P, Q, Q, R);
+
+D(1);
+A(Q);
+
+D(R);
+
+A(A(
+A(A(
+A(A(
+A(A(A(A(A(A(
+A(A(
+
+
+
+
+
+A(A(
+
+
+A(A(
+
+A(A(P))))))))))
+))))))))));
+
+INPUT P;
+INPUT Q;
+INPUT R;
+
+
+B(P, Q, Q, R);
+
+D(1);
+A(Q);
+
+D(R);
+
+A(A(
+A(A(
+A(A(
+A(A(A(A(A(A(
+A(A(
+
+
+
+
+
+A(A(
+
+
+A(A(
+
+A(A(P))))))))))
+))))))))));
+
+
+11 22 13 14 9 6 5 2 1 2 6 6 7 3 1 3 0 1 2 1

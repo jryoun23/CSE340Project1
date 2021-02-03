@@ -1,0 +1,46 @@
+POLY A(X) = X + 1;
+POLY B(Y) = Y + 2;
+POLY C(Z) = Z - 3;
+POLY D(f, g) = f^2 - g + 1;
+START
+INPUT P;
+INPUT Q;
+
+A(B(C(A(B(C(A(B(C(A(B(C(A(B(C(A(B(C(A(B(C(A(B(C(A(B(C(A(B(C(P))))))))))))))))))))))))))))));
+
+INPUT P;
+INPUT Q;
+D(P, D(0, 1));
+D(P, D(Q, D(P, D(Q, D(P, D(Q, D(P, Q)))))));
+
+INPUT P;
+INPUT Q;
+
+A(B(C(A(B(C(A(B(C(A(B(C(A(B(C(A(B(C(A(B(C(A(B(C(A(B(C(A(B(C(P))))))))))))))))))))))))))))));
+
+INPUT P;
+INPUT Q;
+
+D(P, D(Q, D(P, D(Q, D(P, D(Q, D(P, Q)))))));
+
+INPUT P;
+INPUT Q;
+
+A(B(C(A(B(C(A(B(C(A(B(C(A(B(C(A(B(C(A(B(C(A(B(C(A(B(C(A(B(C(P))))))))))))))))))))))))))))));
+
+INPUT P;
+INPUT Q;
+
+D(P, D(Q, D(P, D(Q, D(P, D(Q, D(P, Q)))))));
+
+INPUT P;
+INPUT Q;
+
+A(B(C(A(B(C(A(B(C(A(B(C(A(B(C(A(B(C(A(B(C(A(B(C(A(B(C(A(B(C(P))))))))))))))))))))))))))))));
+
+INPUT P;
+INPUT Q;
+
+D(P, D(Q, D(P, D(Q, D(P, D(Q, D(P, Q)))))));
+
+34 12 36 71 27 21 9 6 0 34 12 36 71 27 21 9 6 0 34 12 36 71 27 21 9 6 0

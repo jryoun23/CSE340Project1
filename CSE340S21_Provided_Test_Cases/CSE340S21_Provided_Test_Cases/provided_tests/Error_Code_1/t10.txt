@@ -1,0 +1,16 @@
+POLY A(M, N, O) = M^7 - 6 N M O^4 + 9 M^8 N^3 O^2 - 5 N M^5 O + 23 M^2 N O;
+POLY B = x^4 + x^3 + x^2 + x^1 + x^0;
+POLY C(P, Q) = P - P + Q - Q;
+POLY D = x + 1;
+POLY E(X) = X + X + 3 X;
+POLY D(Q, W, E, R, T, Y, U, I, O) = I - 18172;
+POLY C = x^2972 + 1;
+POLY E(X) = X;
+START
+INPUT X;
+INPUT Y;
+A(X, Y, X);
+B(B(B(X)));
+INPUT X;
+INPUT Y;
+98 34 92 12 3 4

@@ -1,0 +1,3 @@
+POLY F(X) = X^2 + X + 3;
+START
+F(3);

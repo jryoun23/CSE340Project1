@@ -1,0 +1,4 @@
+INPUT F(X) = X + 2;
+POLY
+START(X);
+1 2 3 4 5

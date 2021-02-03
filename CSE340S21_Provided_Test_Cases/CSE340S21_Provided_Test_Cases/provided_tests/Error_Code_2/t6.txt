@@ -1,0 +1,25 @@
+POLY A(R) = R + 2 R + 1;
+POLY B(R) = R + 2 S + 1;
+POLY M = a + 
+m - x 
+- x^2 + p;
+POLY C(W, C, D, S, J, R, S, F, A) = 
+
+
+
+T 
++ 
+1
+;
+
+START
+A(3);
+INPUT X;
+B(X);
+INPUT Y;
+INPUT Z;
+INPUT X;
+INPUT Y;
+INPUT Z;
+C(1, 2, 3, 4, 5, 6, 7, X, Y);
+9 24 3 282 462 4

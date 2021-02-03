@@ -1,0 +1,30 @@
+POLY T(X, Y) = X + Y;
+POLY S(A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, T, U, V, W, X, Y, Z) = R^2 + Y^2 + U;
+POLY Y = x + 5555;
+START
+INPUT A;
+INPUT B;
+INPUT C;
+
+T
+(
+P, B
+);
+
+S(A, B, C, D, E, F, G, 
+H, I, J, K, L, M, N, 
+O, P, Q, R, T, U, 
+V, W, X, Y, Z);
+
+T(1, 2);
+
+INPUT B;
+INPUT C;
+
+Y(Q);
+Y(P);
+
+T(B, 
+M);
+
+1 2 3 4 5

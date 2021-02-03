@@ -1,0 +1,15 @@
+POLY a(M, N) = b^2 - M + N^8736838;
+POLY C(P) = x + P - 1;
+POLY B(X, Y) = X + Y;
+POLY F = x^2 + 1;
+POLY W(U, P) = A^2 - A - 1;
+
+
+POLY Z(M, N) = b^2 - M + N^8736838;
+
+START
+INPUT X;
+F(X);
+INPUT I;
+C(I);
+273 28 12 3

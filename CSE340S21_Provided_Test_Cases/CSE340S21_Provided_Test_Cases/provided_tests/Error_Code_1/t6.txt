@@ -1,0 +1,13 @@
+POLY F1(X) = X + 1;
+POLY F2 = x^2 + x + 1;
+POLY F1(A, B) = A - A + B;
+POLY F3 = x;
+POLY F4 = x + 1;
+POLY F2(X) = X^5050 - 38792647;
+POLY G1(P, Q, R, S, T) = P Q R S T;
+POLY G2(X, Y) = X Y + 7 Y X;
+POLY G1 = x + 2 x + 3 x;
+START
+INPUT X;
+F4(X);
+34 21 4

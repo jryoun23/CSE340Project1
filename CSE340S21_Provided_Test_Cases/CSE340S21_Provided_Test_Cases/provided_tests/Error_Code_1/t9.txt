@@ -1,0 +1,27 @@
+POLY A(R) = R + 2 R + 1;
+POLY F(Q, W, E, R, T, Y) = Q^121 + W - R^2 - R;
+POLY B(R) = R + 2 R + 1;
+POLY C(W, C, D, S, J, R, S, F, A, T) = T + 1;
+
+POLY 
+	A(R) = R + 2 R + 1;
+POLY F(Q, W, E, R, T, Y) = Q^121 + W - R^2 - R;
+
+POLY Y(a, b) = a - b + a^2 - b^2 + 1;
+
+POLY F(Q, W,
+ E, R, T, Y) = Q^121 + W - R^2 - R;
+POLY B(R) = R + 2 R + 1;
+
+POLY Z(q, w, e, r, t, y) = q - w + e - r + t - y;
+
+POLY A(R) = R + 2 R + 1;
+POLY F(Q, W, E, R, T, Y) = Q^121 + W - R^2 - R;
+POLY B(
+R) = R + 2 R + 1;
+
+POLY YZ = x;
+
+START
+C(1, 2, 3, 4, 5, 6, 7, 8, 9, 9);
+9 8 6 1 3 4

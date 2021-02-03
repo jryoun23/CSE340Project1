@@ -1,0 +1,13 @@
+POLY A(R) = R + 2 R + 1;
+POLY C(Q, W, E, R, T, Y) = Q^121 + W - R^2 - 1;
+POLY B(R) = R + 2 R + 1;
+START
+A(3);
+INPUT X;
+B(X);
+INPUT Y;
+INPUT Z;
+F(X, Y, 
+X, X, Z, Z);
+C(X, Y, X, X, Z, Z);
+9 8 6 1 3 4

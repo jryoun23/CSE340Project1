@@ -1,0 +1,39 @@
+POLY A(M) = 1 + 8 M^0 + 4 M^3;
+POLY B = 9;
+POLY C(N, M) = 2 N - 4 N N + 9 N N N;
+POLY E(M) = 1 + 8 M^0 + 4 M^3;
+POLY F = 9;
+POLY G(N) = 2 N - 4 N N + 9 N N N;
+POLY H(M, O) = 1 + 8 M^0 + 4 M^3;
+POLY I = 9;
+POLY J(N) = 2 N - 4 N N + 9 N N N;
+START
+INPUT X;
+INPUT Y;
+INPUT Z;
+
+C(X);
+B(X, Y);
+A(5);
+
+E(1, Z, Z, X);
+F(X, X, X, Y, Y, Z);
+G(5);
+
+G(X, Z);
+H(Z);
+I(5);
+
+INPUT H;
+INPUT J;
+INPUT Z;
+
+A(H);
+H(J);
+G(5);
+
+J(H);
+B(J);
+A(5);
+
+1 2 3 4 5 6
